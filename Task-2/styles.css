@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 40px;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(135deg, #353535, #444444);
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    border-bottom: 10px solid #b2b2b4;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 5px solid white;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+header p {
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+
+/* Section Styling */
+.section {
+    padding: 60px 0;
+    background-color: white;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.section:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    font-size: 2.8em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+#about p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #555;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+ul li {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+ul li strong {
+    color: #333;
+}
+
+/* Project Section */
+.projects {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project {
+    flex: 1;
+    min-width: 280px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-top: 15px;
+}
+
+.project p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Center the "Download My Resume" button */
+#resume {
+    text-align: center; /* Centers the content horizontally */
+}
+
+#resume .btn {
+    display: inline-block; /* Ensures that the button behaves like an inline element */
+    background-color: #333;
+    color: white;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.3em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 30px; /* Adds space above the button */
+}
+
+#resume .btn:hover {
+    background-color: #555;
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Contact Section */
+#contact a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #515152;
+}
+
+#contact p {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 30px;
+    border-top: 10px solid #3b3b3b;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Button General Style */
+.btn {
+    background-color: #333;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    header p {
+        font-size: 1.1em;
+    }
+
+    .projects {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .project {
+        margin-bottom: 20px;
+    }
+
+    .section {
+        padding: 50px 0;
+    }
+
+    h2 {
+        font-size: 2.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        width: 120px;
+        height: 120px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .projects {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project {
+        padding: 15px;
+    }
+
+    .btn {
+        font-size: 1.1em;
+        padding: 10px 20px;
+    }
+}
+
+
